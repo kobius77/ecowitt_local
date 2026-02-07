@@ -390,7 +390,7 @@ SENSOR_TYPES: Final = {
 # Add dynamically generated channel sensors
 SENSOR_TYPES.update(_generate_channel_sensors(
     "tempf", "Temperature CH{ch}",
-    {"unit": "°F", "device_class": "temperature"}, 8
+    {"unit": "°C", "device_class": "temperature"}, 8
 ))
 SENSOR_TYPES.update(_generate_channel_sensors(
     "humidity", "Humidity CH{ch}",
